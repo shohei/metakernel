@@ -41,7 +41,8 @@ class JigsawMagic(Magic):
             workspace = "jigsaw-workspace-" + (''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for i in range(6)))
         workspace_filename = workspace + ".xml"
         # html_text = download("https://calysto.github.io/jigsaw/" + language + ".html")
-        html_text = download("http://localhost:8000/jigsaw/" + language + ".html")
+        # html_text = download("http://localhost:8000/jigsaw/" + language + ".html")
+        html_text = download("http://shoheiaoki.com/calysto.github.io/jigsaw/" + language + ".html")
         html_filename = workspace + ".html"
         html_text = html_text.replace("MYWORKSPACENAME", workspace_filename)
         with open(html_filename, "w") as fp:
