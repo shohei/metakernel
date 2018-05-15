@@ -383,6 +383,12 @@
       <block type="expression_statement"></block>
       <block type="expression_value"></block>
     </category>
+    <sep></sep>
+    <category name="Overlay"></category>
+    <category name="G-code"></category>
+    <category name="OpenCV"></category>
+    <category name="HW Accel"></category>
+    <category name="UI"></category>
   </xml>
 
   <xml id="workspace" style="display: none">
@@ -397,9 +403,9 @@
 <tr>
 <td>
 <div style="text-align: center">
-    <button onclick="window.parent.document.jigsaw_generate('workspace1.xml', 'Python')">Run</button>
-    <button onclick="window.parent.document.jigsaw_generate('workspace1.xml', 'Python', 1)">Generate Python Code</button>
-    <button onclick="window.parent.document.jigsaw_clear_output('workspace1.xml')">Clear Cell Output</button>
+    <button onclick="window.parent.document.jigsaw_generate('workspace11.xml', 'Python')">Run</button>
+    <button onclick="window.parent.document.jigsaw_generate('workspace11.xml', 'Python', 1)">Generate Python Code</button>
+    <button onclick="window.parent.document.jigsaw_clear_output('workspace11.xml')">Clear Cell Output</button>
 </div>
 </td>
 </tr>
@@ -417,7 +423,7 @@
         });
 
       var xml_init = document.getElementById('workspace');
-      window.parent.document.jigsaw_register_workspace("workspace1.xml", workspace, xml_init);
+      window.parent.document.jigsaw_register_workspace("workspace11.xml", workspace, xml_init);
   </script>
 </body>
 </html>
